@@ -455,6 +455,7 @@ public class AttributeKeys {
                         STROKE_JOIN.get(f),
                         miterLimit,
                         dashes, Math.max(0, (float) (dashPhase * dashFactor)));
+                
             //not reached
         }
     }

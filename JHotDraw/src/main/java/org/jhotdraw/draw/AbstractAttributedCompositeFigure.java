@@ -118,7 +118,7 @@ public abstract class AbstractAttributedCompositeFigure extends AbstractComposit
             child.restoreAttributesTo(i.next());
         }
     }
-
+//her kan metoden tegner et eller andet 
     public void drawFigure(Graphics2D g) {
         drawChildren(g);
         if (AttributeKeys.FILL_COLOR.get(this) != null) {

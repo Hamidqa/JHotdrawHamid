@@ -126,10 +126,12 @@ public class SVGAttributeKeys extends AttributeKeys {
     public static Paint getFillPaint(Figure f) {
         double opacity = FILL_OPACITY.get(f);
         if (FILL_GRADIENT.get(f) != null) {
+            System.out.println("hamid 1. if");
             return FILL_GRADIENT.get(f).getPaint(f, opacity);
         }
         Color color = FILL_COLOR.get(f);
         if (color != null) {
+            System.out.println("hamid 2. if");
             if (opacity != 1) {
                 color = new Color(
                         (color.getRGB() & 0xffffff) | (int) (opacity * 255) << 24,

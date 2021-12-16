@@ -103,7 +103,7 @@ public class SVGPathFigure extends AbstractAttributedCompositeFigure implements 
             }
         }
     }
-
+//For testing purpose
     public void drawFigure(Graphics2D g) {
         AffineTransform savedTransform = null;
         if (TRANSFORM.get(this) != null) {
